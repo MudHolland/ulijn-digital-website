@@ -33,7 +33,20 @@ const FeaturedProjects = () => {
         
         <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-primary/20 bg-card hover:scale-[1.02] cursor-pointer active:scale-[0.98]">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border hover:border-primary/20 bg-card hover:scale-[1.02] cursor-pointer active:scale-[0.98] overflow-hidden">
+              {/* Image placeholder */}
+              <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
+                    Uitgelicht
+                  </span>
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl" />
+                <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-accent/10 rounded-full blur-xl" />
+              </div>
+              
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-semibold text-foreground leading-tight group-hover:text-primary transition-colors mb-3">
                   {project.title}
