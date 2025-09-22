@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav className="sticky top-0 bg-background/80 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-6 py-4">
@@ -22,9 +26,21 @@ const Navigation = () => {
             <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">
               About
             </Link>
+            <button 
+              onClick={scrollToContact}
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              Contact
+            </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-4">
+            <button 
+              onClick={scrollToContact}
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-all duration-200"
+            >
+              Contact
+            </button>
             <button className="text-foreground hover:text-primary transition-colors">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
