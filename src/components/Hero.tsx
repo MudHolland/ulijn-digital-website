@@ -1,4 +1,4 @@
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/DennisUlijn-2024-10.png";
 
 const Hero = () => {
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-light text-foreground mb-8">
-            Interaction Designer
+            UX Designer
           </h2>
           
           <div className="max-w-3xl mx-auto">
@@ -36,9 +36,9 @@ const Hero = () => {
           </div>
           
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-primary text-primary-foreground px-8 py-3 font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden" style={{clipPath: 'polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%)'}}>
+            <button className="group bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden">
               <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Bekijk mijn werk</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full" />
             </button>
             <button className="group border border-primary text-primary px-8 py-3 font-medium hover:bg-primary/5 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-full">
               <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Neem contact op</span>

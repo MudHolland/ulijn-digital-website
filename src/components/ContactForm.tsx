@@ -116,12 +116,11 @@ const ContactForm = () => {
                 <div className="flex justify-end pt-4">
                   <Button 
                     type="submit" 
-                    className="group bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-2xl"
-                    style={{clipPath: 'polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)'}}
+                    className="group bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-full"
                   >
                     <Send size={18} className="mr-2 group-hover:translate-x-1 transition-transform duration-200" />
                     <span className="relative z-10">Verstuur bericht</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full" />
                   </Button>
                 </div>
               </form>

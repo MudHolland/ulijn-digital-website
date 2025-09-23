@@ -14,29 +14,24 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <footer className="bg-background border-t border-border">
         <div className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="font-sarina text-2xl text-primary mb-4">dennisulijn</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Interaction Designer die complexe vraagstukken vertaalt naar intuïtieve oplossingen.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div className="text-center md:text-left">
+              <div className="font-sarina text-3xl text-primary mb-4">dennisulijn</div>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                UX Designer die complexe vraagstukken vertaalt naar intuïtieve oplossingen.
               </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Navigatie</h4>
-              <div className="space-y-2">
-                <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Home</a>
-                <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Over mij</a>
-                <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Projecten</a>
-                <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Blog</a>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Contact</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>info@dennisulijn.com</p>
                 <p>LinkedIn: /in/dennisulijn</p>
+              </div>
+            </div>
+            
+            <div className="text-center md:text-right">
+              <h4 className="font-semibold text-foreground mb-4">Navigatie</h4>
+              <div className="space-y-2">
+                <a href="/blog" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Blog</a>
+                <a href="/tags" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Tags</a>
+                <a href="/about" className="block text-muted-foreground hover:text-primary transition-colors text-sm">About</a>
               </div>
             </div>
           </div>

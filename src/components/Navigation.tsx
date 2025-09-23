@@ -14,9 +14,6 @@ const Navigation = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
-              Home
-            </Link>
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
               Blog
             </Link>
@@ -28,8 +25,7 @@ const Navigation = () => {
             </Link>
             <button 
               onClick={scrollToContact}
-              className="bg-primary text-primary-foreground px-6 py-2 font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 active:scale-95 relative overflow-hidden"
-              style={{clipPath: 'polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%)'}}
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 active:scale-95 relative overflow-hidden"
             >
               <span className="relative z-10">Contact</span>
             </button>
