@@ -36,7 +36,7 @@ const Modal = ({ isOpen, onClose, title, children, heroImage }: ModalProps) => {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-4 right-4 z-10 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background"
+          className="sticky top-4 right-4 z-10 rounded-full bg-background/80 backdrop-blur-sm hover:bg-background float-right"
           onClick={onClose}
         >
           <X className="h-5 w-5" />

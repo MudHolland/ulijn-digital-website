@@ -1,16 +1,6 @@
-import heroBackground from "@/assets/DennisUlijn-2024-10.png";
-
 const Hero = () => {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background to-secondary/30" />
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/30">
       
       {/* Parallax Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

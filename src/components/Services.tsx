@@ -22,6 +22,14 @@ const services: Service[] = [
     content: "Creating comprehensive brand identities that resonate with your audience. From conceptual exploration to final guidelines, we ensure your brand stands out with a cohesive visual language that communicates your values and mission effectively."
   },
   {
+    id: "print-design",
+    icon: Printer,
+    title: "Print Design",
+    subtitle: "Marketing Materials",
+    details: ["Business Cards & Stationery", "Brochure & Marketing Materials", "Packaging Design", "Exhibition & Display Graphics"],
+    content: "Designing impactful print materials that extend your brand into the physical world. From business cards to large-scale exhibition graphics, we ensure every touchpoint reflects your brand's quality and values."
+  },
+  {
     id: "concept-design",
     icon: Lightbulb,
     title: "Project/Concept Design",
@@ -44,14 +52,6 @@ const services: Service[] = [
     subtitle: "Full-Stack Solutions",
     details: ["React/Angular", "Responsive Design", "Full-Stack Solutions", "Performance Optimization"],
     content: "Building robust, performant web applications using modern frameworks. We deliver responsive, accessible solutions optimized for speed and user experience, with full-stack capabilities for complete digital products."
-  },
-  {
-    id: "print-design",
-    icon: Printer,
-    title: "Print Design",
-    subtitle: "Marketing Materials",
-    details: ["Business Cards & Stationery", "Brochure & Marketing Materials", "Packaging Design", "Exhibition & Display Graphics"],
-    content: "Designing impactful print materials that extend your brand into the physical world. From business cards to large-scale exhibition graphics, we ensure every touchpoint reflects your brand's quality and values."
   }
 ];
 
@@ -69,7 +69,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:transform md:-translate-x-1/2" />
@@ -81,19 +81,16 @@ const Services = () => {
                 return (
                   <div
                     key={service.id}
-                    className={`relative mb-12 md:mb-16 ${
-                      isEven ? "md:pr-1/2 md:text-right" : "md:pl-1/2 md:ml-auto"
+                    className={`relative mb-12 md:mb-16 md:w-1/2 ${
+                      isEven ? "md:pr-8" : "md:ml-auto md:pl-8"
                     }`}
                   >
                     {/* Timeline dot */}
-                    <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background md:transform md:-translate-x-1/2" />
+                    <div className="absolute left-8 md:left-[calc(100%+2px)] md:top-6 w-4 h-4 bg-primary rounded-full border-4 border-background" 
+                         style={isEven ? {} : { left: 'auto', right: 'calc(100% + 2px)' }} />
 
                     {/* Content card */}
-                    <div
-                      className={`ml-20 md:ml-0 ${
-                        isEven ? "md:mr-12" : "md:ml-12"
-                      }`}
-                    >
+                    <div className="ml-20 md:ml-0">
                       <div
                         className="bg-card border border-border rounded-lg p-6 cursor-pointer transition-all duration-300 hover:shadow-lg hover:border-primary/50 group"
                         onClick={() => setSelectedService(service)}
