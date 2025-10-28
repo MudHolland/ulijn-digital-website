@@ -14,31 +14,49 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <footer className="bg-background border-t border-border">
         <div className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div className="text-center md:text-left">
-              <div className="font-sarina text-3xl text-primary mb-4">dennisulijn</div>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                UX Designer die complexe vraagstukken vertaalt naar intuïtieve oplossingen.
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="font-sarina text-4xl text-primary mb-4">ulijn digital</div>
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                Design & Development Studio creating digital experiences that work beautifully.
               </p>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <p>info@dennisulijn.com</p>
-                <p>LinkedIn: /in/dennisulijn</p>
-              </div>
             </div>
-            
-            <div className="text-center md:text-right">
-              <h4 className="font-semibold text-foreground mb-4">Navigatie</h4>
-              <div className="space-y-2">
-                <a href="/blog" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Blog</a>
-                <a href="/tags" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Tags</a>
-                <a href="/about" className="block text-muted-foreground hover:text-primary transition-colors text-sm">About</a>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+              <div>
+                <h4 className="font-semibold text-foreground mb-3">Navigation</h4>
+                <div className="space-y-2">
+                  <a href="/#services" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Services</a>
+                  <a href="/#projects" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Projects</a>
+                  <a href="/blog" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Blog</a>
+                  <a href="/#testimonials" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Testimonials</a>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-foreground mb-3">Services</h4>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground text-sm">Brand Design</p>
+                  <p className="text-muted-foreground text-sm">Web/App Development</p>
+                  <p className="text-muted-foreground text-sm">UX/UI Design</p>
+                  <p className="text-muted-foreground text-sm">Print Design</p>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-foreground mb-3">Contact</h4>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>hello@ulijn.digital</p>
+                  <p>LinkedIn: /company/ulijn-digital</p>
+                  <p>Amsterdam, Netherlands</p>
+                </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 Dennis Ulijn. Alle rechten voorbehouden.
+              © 2025 ulijn digital. All rights reserved.
             </p>
           </div>
         </div>

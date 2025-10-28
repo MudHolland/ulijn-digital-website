@@ -27,14 +27,14 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">
-            Laten we samenwerken
+            Let's Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Heb je een project in gedachten? Stuur me een bericht en laten we bespreken hoe ik je kan helpen.
+            Have a project in mind? Let's discuss how we can help bring your vision to life.
           </p>
         </div>
 
@@ -53,12 +53,12 @@ const ContactForm = () => {
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
                     <User size={16} />
-                    <span>Van:</span>
+                    <span>From:</span>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Input
                       name="name"
-                      placeholder="Jouw naam"
+                      placeholder="Your name"
                       value={formData.name}
                       onChange={handleChange}
                       className="bg-background border-border focus:border-primary transition-colors"
@@ -67,7 +67,7 @@ const ContactForm = () => {
                     <Input
                       name="email"
                       type="email"
-                      placeholder="jouw.email@example.com"
+                      placeholder="your.email@example.com"
                       value={formData.email}
                       onChange={handleChange}
                       className="bg-background border-border focus:border-primary transition-colors"
@@ -79,18 +79,18 @@ const ContactForm = () => {
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
                     <Mail size={16} />
-                    <span>Aan: info@dennisulijn.com</span>
+                    <span>To: hello@ulijn.digital</span>
                   </div>
                 </div>
 
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
                     <MessageCircle size={16} />
-                    <span>Onderwerp:</span>
+                    <span>Subject:</span>
                   </div>
                   <Input
                     name="subject"
-                    placeholder="Waar gaat jouw bericht over?"
+                    placeholder="What is your message about?"
                     value={formData.subject}
                     onChange={handleChange}
                     className="bg-background border-border focus:border-primary transition-colors"
@@ -101,11 +101,11 @@ const ContactForm = () => {
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
                     <MessageCircle size={16} />
-                    <span>Bericht:</span>
+                    <span>Message:</span>
                   </div>
                   <Textarea
                     name="message"
-                    placeholder="Vertel me over jouw project, uitdaging of vraag..."
+                    placeholder="Tell us about your project, challenge, or question..."
                     value={formData.message}
                     onChange={handleChange}
                     className="bg-background border-border focus:border-primary transition-colors min-h-[120px] resize-none"
@@ -119,7 +119,7 @@ const ContactForm = () => {
                     className="group bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-full"
                   >
                     <Send size={18} className="mr-2 group-hover:translate-x-1 transition-transform duration-200" />
-                    <span className="relative z-10">Verstuur bericht</span>
+                    <span className="relative z-10">Send Message</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full" />
                   </Button>
                 </div>

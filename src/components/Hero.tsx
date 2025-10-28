@@ -21,27 +21,32 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-sarina text-5xl md:text-7xl text-primary mb-6 leading-tight">
-            Dennis Ulijn
+            ulijn digital
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-light text-foreground mb-8">
-            UX Designer
+            Design & Development Studio
           </h2>
           
           <div className="max-w-3xl mx-auto">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light italic">
-              "Ik ontwerp innovatieve interacties met een focus op de gebruiker en het waarom achter hun behoeften. 
-              Door mijn analytische blik en creativiteit te combineren, vertaal ik complexe vraagstukken naar intuïtieve oplossingen."
+              "We create digital experiences that work beautifully. From brand identity to full-stack development, we transform complex challenges into intuitive solutions."
             </p>
           </div>
           
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden">
-              <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Bekijk mijn werk</span>
+            <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group bg-primary text-primary-foreground px-8 py-3 rounded-full font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden"
+            >
+              <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Our Services</span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-full" />
             </button>
-            <button className="group border border-primary text-primary px-8 py-3 font-medium hover:bg-primary/5 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-full">
-              <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Neem contact op</span>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group border border-primary text-primary px-8 py-3 font-medium hover:bg-primary/5 transition-all duration-200 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden rounded-full"
+            >
+              <span className="group-hover:scale-110 transition-transform duration-200 inline-block relative z-10">Get in Touch</span>
               <div className="absolute inset-0 bg-primary/5 scale-0 group-hover:scale-100 transition-transform duration-200 rounded-full" />
             </button>
           </div>

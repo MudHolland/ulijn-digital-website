@@ -10,19 +10,22 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="font-sarina text-2xl text-primary hover:text-accent transition-colors">
-            dennisulijn
+            ulijn digital
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
+            <a href="/#services" className="text-foreground hover:text-primary transition-colors font-medium">
+              Services
+            </a>
+            <a href="/#projects" className="text-foreground hover:text-primary transition-colors font-medium">
+              Projects
+            </a>
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
               Blog
             </Link>
-            <Link to="/tags" className="text-foreground hover:text-primary transition-colors font-medium">
-              Tags
-            </Link>
-            <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">
-              About
-            </Link>
+            <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors font-medium">
+              Testimonials
+            </a>
             <button 
               onClick={scrollToContact}
               className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 active:scale-95 relative overflow-hidden"
