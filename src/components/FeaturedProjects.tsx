@@ -72,9 +72,9 @@ const FeaturedProjects = () => {
       <section id="projects" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Uitgelichte Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Recent work showcasing our approach to digital design and development
+              Recent werk dat onze aanpak van digitaal design en development laat zien
             </p>
           </div>
           
@@ -139,7 +139,7 @@ const FeaturedProjects = () => {
             <p className="text-muted-foreground">{selectedProject.date}</p>
             
             <div className="prose prose-lg max-w-none dark:prose-invert">
-              <h3>Project Overview</h3>
+              <h3>Project Overzicht</h3>
               <p className="text-lg leading-relaxed">{selectedProject.description}</p>
               
               <h3>Project Details</h3>
@@ -147,15 +147,15 @@ const FeaturedProjects = () => {
               
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-muted p-6 rounded-lg">
-                  <h4 className="font-semibold mb-2">Challenge</h4>
+                  <h4 className="font-semibold mb-2">Uitdaging</h4>
                   <p className="text-sm text-muted-foreground">
-                    Creating a solution that balances user needs with business objectives while maintaining technical feasibility.
+                    Een oplossing creëren die gebruikersbehoeften balanceert met bedrijfsdoelstellingen, terwijl technische haalbaarheid behouden blijft.
                   </p>
                 </div>
                 <div className="bg-muted p-6 rounded-lg">
-                  <h4 className="font-semibold mb-2">Outcome</h4>
+                  <h4 className="font-semibold mb-2">Resultaat</h4>
                   <p className="text-sm text-muted-foreground">
-                    Delivered a comprehensive solution that exceeded client expectations and achieved measurable business impact.
+                    Een uitgebreide oplossing opgeleverd die de verwachtingen van de klant overtrof en meetbare impact realiseerde.
                   </p>
                 </div>
               </div>

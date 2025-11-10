@@ -65,7 +65,7 @@ const Services = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Services</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              End-to-end design and development services for digital brands
+              End-to-end design en development services voor digitale merken
             </p>
           </div>
 
@@ -144,7 +144,7 @@ const Services = () => {
 
             <div className="mt-8 p-6 bg-muted rounded-lg">
               <p className="text-center text-muted-foreground italic">
-                Example projects and case studies for this service coming soon.
+                Voorbeeldprojecten en casestudies voor deze service komen binnenkort.
               </p>
             </div>
           </div>

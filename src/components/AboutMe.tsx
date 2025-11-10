@@ -7,23 +7,23 @@ const AboutMe = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">About Dennis</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Over Dennis</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Hi, I'm Dennis Ulijn, the founder of ulijn digital. With over a decade of experience 
-                  in design and development, I've helped brands transform their digital presence through 
-                  thoughtful design and robust technical solutions.
+                  Hoi, ik ben Dennis Ulijn, de oprichter van ulijn digital. Met meer dan tien jaar ervaring 
+                  in design en development, heb ik merken geholpen hun digitale aanwezigheid te transformeren 
+                  door doordacht design en robuuste technische oplossingen.
                 </p>
                 <p>
-                  My approach combines strategic thinking with hands-on execution. Whether it's crafting 
-                  a brand identity from scratch, designing intuitive user experiences, or building 
-                  full-stack applications, I'm committed to delivering solutions that not only look 
-                  great but work beautifully.
+                  Mijn aanpak combineert strategisch denken met hands-on uitvoering. Of het nu gaat om het 
+                  creëren van een merkidentiteit vanaf nul, het ontwerpen van intuïtieve gebruikerservaringen, 
+                  of het bouwen van full-stack applicaties, ik ben toegewijd aan het leveren van oplossingen 
+                  die er niet alleen geweldig uitzien, maar ook naadloos werken.
                 </p>
                 <p>
-                  I believe in the power of collaboration and clear communication. Every project is 
-                  an opportunity to solve complex challenges with elegant, user-centered solutions 
-                  that drive real business results.
+                  Ik geloof in de kracht van samenwerking en heldere communicatie. Elk project is een kans 
+                  om complexe uitdagingen op te lossen met elegante, gebruikersgerichte oplossingen die 
+                  echte bedrijfsresultaten opleveren.
                 </p>
               </div>
             </div>

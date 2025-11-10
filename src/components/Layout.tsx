@@ -18,37 +18,30 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="text-center mb-8">
               <div className="font-sarina text-4xl text-primary mb-4">ulijn digital</div>
               <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Design & Development Studio creating digital experiences that work beautifully.
+                Design & Development Studio
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 text-center md:text-left">
               <div>
-                <h4 className="font-semibold text-foreground mb-3">Navigation</h4>
+                <h4 className="font-semibold text-foreground mb-3">Navigatie</h4>
                 <div className="space-y-2">
                   <a href="/#services" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Services</a>
                   <a href="/#projects" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Projects</a>
-                  <a href="/blog" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Blog</a>
+                  <a href="/#about" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Over</a>
                   <a href="/#testimonials" className="block text-muted-foreground hover:text-primary transition-colors text-sm">Testimonials</a>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-foreground mb-3">Services</h4>
-                <div className="space-y-2">
-                  <p className="text-muted-foreground text-sm">Brand Design</p>
-                  <p className="text-muted-foreground text-sm">Web/App Development</p>
-                  <p className="text-muted-foreground text-sm">UX/UI Design</p>
-                  <p className="text-muted-foreground text-sm">Print Design</p>
                 </div>
               </div>
 
               <div>
                 <h4 className="font-semibold text-foreground mb-3">Contact</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>hello@ulijn.digital</p>
-                  <p>LinkedIn: /company/ulijn-digital</p>
-                  <p>Amsterdam, Netherlands</p>
+                  <p className="font-semibold text-foreground">Ulijn Digital</p>
+                  <p>Wrijfschaalpad 25</p>
+                  <p>5347 HX Oss</p>
+                  <p className="pt-2">Tel: +31 (0) 6 46 037 987</p>
+                  <p>KVK-nummer: 98419315</p>
+                  <p className="pt-2">info@ulijn.digital</p>
                 </div>
               </div>
             </div>
